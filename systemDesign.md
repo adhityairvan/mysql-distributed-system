@@ -1,6 +1,6 @@
 # System Design
 ## Design Diagram
-
+![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/DeploymentDiagram1.png)
 ## Specification
 * IP Address Server
   * Mysql Server 1 : 10.1.15.143
