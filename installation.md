@@ -137,8 +137,10 @@ We will use vagrant to create virtual machine and use provision script to instal
     ```
     SELECT * FROM performance_schema.replication_group_members;
     ```
+    ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-09%2002-14-23.png)
     2. start group replication on other servers
     ```
     START GROUP_REPLICATION;
     ```
     3. you can check group members with same command.
+    ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-09%2002-32-41.png)
