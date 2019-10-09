@@ -53,6 +53,7 @@ on one of mysql server, do these steps below
    ```
    select user, host from mysql.user;
    ```
+   ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-09%2010-09-19.png)
 ssh to our proxysql server and do steps below: 
 1. set the monitor username the same as what we create befor.
    ```
@@ -85,6 +86,7 @@ ssh to our proxysql server and do steps below:
    ```
    SELECT hostgroup_id, hostname, status FROM runtime_mysql_servers;
    ```
+   ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-09%2010-50-04.png)
 ## Create user for accessing database
 1. Create user on mysql server
    ```
@@ -110,3 +112,4 @@ ssh to our proxysql server and do steps below:
    ```
    SELECT @@hostname;
    ```
+   ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-09%2011-03-20.png)
