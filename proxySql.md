@@ -91,7 +91,7 @@ ssh to our proxysql server and do steps below:
 1. Create user on mysql server
    ```
    CREATE USER 'adhityairvan'@'%' IDENTIFIED BY 'etsbdt';
-   GRANT ALL PRIVILEGES on * to 'adhityairvan'@'%';
+   GRANT ALL PRIVILEGES on *.* to 'adhityairvan'@'%';
    FLUSH PRIVILEGES;
    EXIT;
    ```
@@ -113,3 +113,6 @@ ssh to our proxysql server and do steps below:
    SELECT @@hostname;
    ```
    ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-09%2011-03-20.png)
+
+
+source: https://www.digitalocean.com/community/tutorials/how-to-use-proxysql-as-a-load-balancer-for-mysql-on-ubuntu-16-04

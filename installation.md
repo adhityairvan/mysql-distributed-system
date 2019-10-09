@@ -144,3 +144,5 @@ We will use vagrant to create virtual machine and use provision script to instal
     ```
     3. you can check group members with same command.
     ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-09%2002-32-41.png)
+
+source https://www.digitalocean.com/community/tutorials/how-to-configure-mysql-group-replication-on-ubuntu-16-04
