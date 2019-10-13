@@ -7,6 +7,23 @@
 4. composer
 ### step by step
 1. edit vagrantfile to add new VM
+   ```
+   config.vm.define "webserver" do |webserver|
+    webserver.vm.hostname = "webserver"
+    webserver.vm.box = "bento/ubuntu-16.04"
+    webserver.vm.network "private_network", ip: "10.10.15.147"
+    config.vm.network "forwarded_port", guest: 80, host: 8080
+    config.vm.synced_folder ".", "/vagrant", mount_options: ["dmode=755,fmode=755"]
+
+    webserver.vm.provider "virtualbox" do |vb|
+      vb.name = "webserver"
+      vb.gui = false
+      vb.memory = "512"
+    end
+    webserver.vm.provision "shell", path: "provisionWebserver.sh", privileged: false
+
+   end
+   ```
 2. write provisioning script to automate installing the required app
    ```
    # Changing the APT sources.list to kambing.ui.ac.id
