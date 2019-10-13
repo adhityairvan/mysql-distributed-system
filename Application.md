@@ -50,6 +50,16 @@
 5. edit apache config to serve our laravel app
    ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-14%2002-40-28.png)
 6. Edit Your laravel .env to point our proxysql database
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=laravel
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+   ganti **db_host** dengan ip proxysql kita, yaitu 10.10.15.146 dan port nya menjadi 6033 (port proxysql)
+   isi database, username dan password sesuai dengan credential pada mysql server kita
 7. Do some laravel setup
    ```
    php artisan migration:refresh
