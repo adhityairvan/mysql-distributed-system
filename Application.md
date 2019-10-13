@@ -31,6 +31,7 @@
    sudo ln -s /vagrant/ApplicationPOS /var/www/html/laravel
    ```
 5. edit apache config to serve our laravel app
+   ![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-14%2002-40-28.png)
 6. Edit Your laravel .env to point our proxysql database
 7. Do some laravel setup
    ```
@@ -46,5 +47,9 @@
 ### Deskripsi
 Aplikasi ini adalah aplikasi sederhana pencatatan penjualan sebuah toko. Pemilik toko bisa menambah barang dagangan beserta stok nya. Pemilik toko juga bisa menambah pegawai dengan hak akses terbatas untuk menjadi kasir/ pencatat transaksi yang ada.
 ### Use Case
-
+![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/UseCaseDiagram1.png)
 ### Screenshot Aplikasi
+![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-14%2002-49-42.png)
+![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-14%2002-50-14.png)
+![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-14%2002-50-20.png)
+![](https://github.com/adhityairvan/mysql-distributed-system/raw/master/image/Screenshot%20from%202019-10-14%2002-50-23.png)
